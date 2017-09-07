@@ -45,6 +45,12 @@
     <EmbeddedResource Include="Views\StyleInheritancePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\DynamicStylePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DynamicInhetitancePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -69,6 +75,12 @@
     </Compile>
     <Compile Include="Views\StyleInheritancePage.xaml.cs">
       <DependentUpon>StyleInheritancePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DynamicStylePage.xaml.cs">
+      <DependentUpon>DynamicStylePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DynamicInhetitancePage.xaml.cs">
+      <DependentUpon>DynamicInhetitancePage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

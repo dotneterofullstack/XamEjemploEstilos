@@ -10,4 +10,6 @@
     <views:ImplicitStylePage Title="Implicit Styles" />
     <views:GlobalStylePage Title="Global Styles" />
     <views:StyleInheritancePage Title="Styles Inheritance" />
+    <views:DynamicStylePage Title="Dynamic Styles" />
+    <views:DynamicInhetitancePage Title="Dynamic Inhetitance" />
 </TabbedPage>

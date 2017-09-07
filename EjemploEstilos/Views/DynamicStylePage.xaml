@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="EjemploEstilos.Views.DynamicStylePage"
+    Title="Dynamic Styles">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="baseStyle" TargetType="View">
+                <Setter Property="HorizontalOptions" Value="Fill" />
+                <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+            </Style>
+
+            <Style x:Key="blueSearchStyle" TargetType="SearchBar" BasedOn="{ StaticResource baseStyle }">
+                <Setter Property="TextColor" Value="Blue" />
+            </Style>
+
+            <Style x:Key="greenSearchStyle" TargetType="SearchBar" BasedOn="{ StaticResource baseStyle }">
+                <Setter Property="TextColor" Value="Green" />
+                <Setter Property="VerticalOptions" Value="Start" />
+            </Style>
+
+            <Style x:Key="buttonStyle" TargetType="Button" BasedOn="{ StaticResource baseStyle }">
+                <Setter Property="TextColor" Value="Red" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout Padding="0, 20, 0, 0">
+            <SearchBar Text="These SearchBar controls" Style="{ DynamicResource searchBarStyle }" />
+            <SearchBar Text="are demostrating" Style="{ DynamicResource searchBarStyle }" />
+            <SearchBar Text="dynamic styles" Style="{ DynamicResource searchBarStyle }" />
+            <SearchBar Text="but this isn't dynamic" Style="{ StaticResource blueSearchStyle }" />
+
+            <Button Text="Change style" Clicked="OnButtonClicked" Style="{ StaticResource buttonStyle }" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
