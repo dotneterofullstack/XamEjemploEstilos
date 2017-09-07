@@ -51,6 +51,9 @@
     <EmbeddedResource Include="Views\DynamicInhetitancePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\DeviceStylePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -81,6 +84,9 @@
     </Compile>
     <Compile Include="Views\DynamicInhetitancePage.xaml.cs">
       <DependentUpon>DynamicInhetitancePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DeviceStylePage.xaml.cs">
+      <DependentUpon>DeviceStylePage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -12,4 +12,5 @@
     <views:StyleInheritancePage Title="Styles Inheritance" />
     <views:DynamicStylePage Title="Dynamic Styles" />
     <views:DynamicInhetitancePage Title="Dynamic Inhetitance" />
+    <views:DeviceStylePage Title="Device Styles" />
 </TabbedPage>
